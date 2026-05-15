@@ -1,0 +1,16 @@
+{
+  "program_name": "Example Program",
+  "website_url": "https://example.com",
+  "affiliate_program_url": "https://example.com/affiliate-program",
+  "category": "SaaS",
+  "commission": "30% recurring",
+  "cookie_duration": "60 days",
+  "payment_methods": null,
+  "description": "Example Program is a SaaS platform with a public affiliate program listed on FindAffiliates.",
+  "last_updated": "2026-03",
+  "source_url": "https://www.findaffiliates.online/example-affiliate-program",
+  "extracted_at": "2026-05-15T20:11:58Z",
+  "confidence": 0.92,
+  "needs_review": false,
+  "review_reason": null
+}

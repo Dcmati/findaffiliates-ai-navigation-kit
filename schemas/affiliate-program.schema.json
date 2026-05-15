@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rekonmediacontact/findaffiliates-ai-navigation-kit/schemas/affiliate-program.schema.json",
+  "title": "FindAffiliates Affiliate Program",
+  "description": "A public affiliate program listing extracted from a FindAffiliates program page.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "program_name",
+    "source_url",
+    "confidence",
+    "needs_review"
+  ],
+  "properties": {
+    "program_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "website_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "affiliate_program_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "category": {
+      "type": ["string", "null"]
+    },
+    "commission": {
+      "type": ["string", "null"]
+    },
+    "cookie_duration": {
+      "type": ["string", "null"]
+    },
+    "payment_methods": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": ["string", "null"]
+    },
+    "last_updated": {
+      "type": ["string", "null"]
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "extracted_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "review_reason": {
+      "type": ["string", "null"]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rekonmediacontact/findaffiliates-ai-navigation-kit/schemas/crawl-result.schema.json",
+  "title": "FindAffiliates Crawl Result",
+  "description": "A crawl result for a public FindAffiliates URL.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_url",
+    "status",
+    "fetched_at",
+    "blocked",
+    "needs_review"
+  ],
+  "properties": {
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "canonical_url": {
+      "type": ["string", "null"],
+      "format": "uri"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "content_type": {
+      "type": ["string", "null"]
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "blocked": {
+      "type": "boolean"
+    },
+    "blocked_reason": {
+      "type": ["string", "null"]
+    },
+    "markdown_available": {
+      "type": ["boolean", "null"]
+    },
+    "extracted_type": {
+      "type": ["string", "null"],
+      "enum": [
+        "affiliate_program",
+        "blog_post",
+        "utility_page",
+        "llms_file",
+        "sitemap",
+        "robots",
+        "unknown",
+        null
+      ]
+    },
+    "needs_review": {
+      "type": "boolean"
+    },
+    "review_reason": {
+      "type": ["string", "null"]
+    }
+  }
+}
