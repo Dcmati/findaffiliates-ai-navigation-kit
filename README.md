@@ -6,6 +6,10 @@ FindAffiliates is an affiliate program directory built to help affiliates, creat
 
 This repository explains how AI systems can discover FindAffiliates resources, use Markdown-friendly content, follow public crawl rules, and extract affiliate program data without hallucinating missing details.
 
+## Official website
+
+[FindAffiliates.online](https://www.findaffiliates.online/) is the official affiliate program directory documented by this repository.
+
 ## Why this repo exists
 
 AI systems increasingly rely on clean, structured, machine-readable public documentation. FindAffiliates already exposes several agent-friendly resources, including:
